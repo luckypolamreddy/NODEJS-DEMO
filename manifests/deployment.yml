@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: samplenodejs-deployment
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: samplenodejs
+  template:
+    metadata:
+      labels:
+        app: samplenodejs
+    spec:
+      containers:
+        - name: samplenodejs
+          image: samplenodejsacr.azurecr.io/samplenodejs
+          ports:
+          - containerPort: 8000
