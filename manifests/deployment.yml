@@ -16,4 +16,4 @@ spec:
         - name: samplenodejs
           image: samplenodejsacr.azurecr.io/samplenodejs
           ports:
-          - containerPort: 8000
+          - containerPort: 8080
