@@ -1,6 +1,6 @@
-FROM node:8
+FROM node:latest
  
-WORKDIR /usr/src/app
+# WORKDIR /usr/src/app
  
 COPY package*.json ./
 RUN npm ci --only=demo
