@@ -13,10 +13,10 @@ variables:
   # Container registry service connection established during pipeline creation
   dockerRegistryServiceConnection: 'e437cbec-81ad-45ce-9376-cf0e6d6acc3e'
   imageRepository: 'personalluckynodejsdemo'
-  containerRegistry: 'samplenodejsacr.azurecr.io'
+  containerRegistry: 'techtaskacr.azurecr.io'
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
-  imagePullSecret: 'samplenodejsacr1582ad83-auth'
+  imagePullSecret: 'techtaskacr-auth'
 
   # Agent VM image name
   vmImageName: 'ubuntu-latest'
