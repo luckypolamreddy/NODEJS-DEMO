@@ -56,7 +56,7 @@ stages:
     displayName: Deploy
     pool:
       vmImage: $(vmImageName)
-    environment: 'personallucky0524NODEJSDEMO.demo'
+    environment: 'demo'
     strategy:
       runOnce:
         deploy:
